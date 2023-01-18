@@ -1,7 +1,7 @@
 function generatePassword() {
   var passwordLength = document.getElementById("passwordLength").value
   var possible =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;':,.<>/?`~"
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-*@+-*@"
   var password = ""
 
   for (var i = 0; i < passwordLength; i++) {
