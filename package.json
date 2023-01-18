@@ -1,0 +1,25 @@
+{
+    "name": "tailwind",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css --watch",
+        "build": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css",
+        "write": "npx prettier --write index.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/line-clamp": "^0.4.2",
+        "@tailwindcss/typography": "^0.5.7",
+        "autoprefixer": "^10.4.8",
+        "postcss": "^8.4.16",
+        "prettier": "^2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.13",
+        "tailwindcss": "^3.1.8"
+    }
+}

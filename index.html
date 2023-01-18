@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="app/css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Generate Random | Password</title>
+  </head>
+  <body>
+    <section class="container mx-auto max-w-screen-sm py-6 sm:px-6 xl:px-8">
+      <form class="rounded-lg bg-white p-6 shadow-md">
+        <label class="text-lg font-medium">Enter password length:</label>
+        <input
+          class="rounded-lg border border-gray-400 p-2"
+          type="number"
+          id="passwordLength"
+          min="8"
+          max="24"
+        />
+        <button
+          class="rounded-lg bg-green-500 p-2 text-white hover:bg-green-600"
+          type="button"
+          onclick="generatePassword()"
+        >
+          Generate Password
+        </button>
+      </form>
+
+      <br />
+
+      <div
+        id="passwordOutput"
+        class="rounded-lg bg-green-100 p-6 text-center text-xl font-medium text-green-800"
+      ></div>
+    </section>
+
+    <div class="container mx-auto text-center">
+      <a
+        href="./semakpass.html"
+        class="rounded-lg bg-green-500 p-2 text-white hover:bg-green-600"
+        >Next Page</a
+      >
+    </div>
+
+    <script src="app/js/generate.js"></script>
+  </body>
+</html>
